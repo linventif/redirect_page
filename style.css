@@ -1,0 +1,59 @@
+body {
+    background-color: #292C36;
+    color: #fff;
+    /* use roboto  */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* center text to midle */
+    text-align: center;
+    /* remove margin */
+    margin: 0;
+    /* remove padding */
+    padding: 0;
+    /* 25% of the page verticaly */
+    position: absolute;
+    top: 35%;
+    /* 50% of the page horizontaly */
+    left: 50%;
+    /* move the center of the page to the center of the screen */
+    transform: translate(-50%, -50%);
+}
+
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    width: 760;
+    margin: 0 auto;
+    /* center grid */
+    justify-content: center;
+    /* center grid */
+    align-items: center;
+    /* 2 columns */
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20vh;
+}
+
+.box {
+    /* rounded 12*/
+    height: 80;
+    width: 320;
+    border-radius: 12px;
+    /* transition 0.3s */
+    transition: 0.3s;
+}
+
+.box:hover {
+    /* translate 10px top */
+    transform: translate(0, -10px);
+    /* transition 0.3s */
+    transition: 0.3s;
+}
+
+h1 {
+    /* font size 32px */
+    font-size: 42px;
+    /* font weight 700 */
+    font-weight: 700;
+    /* margin bottom 20px */
+    margin-bottom: 20px;
+}
